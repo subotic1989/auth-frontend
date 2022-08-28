@@ -1,0 +1,26 @@
+<div class="register" *ngIf="!isDialog">
+  <div class="container">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="input-row">
+        <label for="name">Name</label>
+        <input type="name" name="name" formControlName="name" />
+      </div>
+
+      <div class="input-row">
+        <label for="email">Email</label>
+        <input type="email" name="email" formControlName="email" />
+      </div>
+
+      <div class="input-row">
+        <label for="emial">Password</label>
+        <input type="password" name="password" formControlName="password" />
+      </div>
+
+      <button>Register</button>
+    </form>
+
+    <p>Already a have an account? <a [routerLink]="['/login']">Login</a></p>
+  </div>
+</div>
+
+<app-dialog [dialogContent]="responseMsg" *ngIf="isDialog"></app-dialog>

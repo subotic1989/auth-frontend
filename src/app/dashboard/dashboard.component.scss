@@ -1,0 +1,40 @@
+.dashboard {
+  padding: 80px 0px;
+
+  .container {
+    max-width: 1680px;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    column-gap: 6rem;
+
+    .one {
+      p {
+        margin-bottom: 20px;
+      }
+
+      .buttons {
+        button {
+          cursor: pointer;
+          color: white;
+          background: #645cff;
+          border: transparent;
+          border-radius: 3px;
+          padding: 0.375rem 0.75rem;
+          text-transform: capitalize;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .two {
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+}

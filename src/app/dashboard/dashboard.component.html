@@ -1,0 +1,30 @@
+<div class="dashboard">
+  <div class="container">
+    <!-- one -->
+    <div class="one">
+      <h2>AuthWorkflow</h2>
+
+      <p>
+        I'm baby viral enamel pin chartreuse cliche retro af selfies kinfolk
+        photo booth plaid jianbing actually squid 3 wolf moon lumbersexual. Hell
+        of humblebrag gluten-free lo-fi man braid leggings.
+        <br />
+        <br />
+        Cloud bread kale chips wayfarers deep v chicharrones leggings
+        fingerstache actually blog cliche four dollar toast. Sriracha ugh
+        kickstarter, next level la croix butcher lomo.
+      </p>
+
+      <div class="buttons">
+        <button (click)="onLogin()" *ngIf="!user">Login</button>
+        <button (click)="onRegister()" *ngIf="!user">Register</button>
+        <button (click)="onLogout()" *ngIf="user">Logout</button>
+      </div>
+    </div>
+
+    <!-- two -->
+    <div class="two">
+      <img src="../../assets/images/post.svg" alt="post" />
+    </div>
+  </div>
+</div>

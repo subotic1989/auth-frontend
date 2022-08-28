@@ -1,0 +1,17 @@
+.dialog {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafc;
+
+  .container {
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+    padding: 40px;
+    width: 50%;
+
+    h5 {
+      text-align: center;
+    }
+  }
+}

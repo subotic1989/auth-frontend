@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: clamp(40px, 7vw, 72px);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: clamp(30px, 6vw, 56px);
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: clamp(25px, 5vw, 40px);
+}
+
+h4 {
+  font-size: clamp(20px, 4vw, 24px);
+}
+
+h5 {
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+button {
+  cursor: pointer;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched {
+  border: 2px solid #cc3333 !important;
+}
+
+input.ng-valid.ng-touched,
+select.ng-valid.ng-touched {
+  border: 2px solid green !important;
+}
